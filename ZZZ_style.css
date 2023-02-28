@@ -1,0 +1,73 @@
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%,
+		padding: 10px;
+	margin: auto;
+	text-align: center;
+	z-index: 3;
+}
+
+.footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: darkgrey;
+	padding: 20px;
+	z-index: 0;
+	color: white;
+	font-size: 15px;
+	text-align: center;
+}
+
+.footer a {
+
+
+	color: white;
+	font-size: 10px;
+	text-align: left;
+
+}
+
+
+.container1 {
+	margin-top: 170px;
+	margin-bottom: 80px;
+	z-index: 1
+}
+
+.container2 {
+	z-index: 2;
+	margin-bottom: 200px;
+}
+
+
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+	...
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+	...
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+	...
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+	...
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+	...
+}
