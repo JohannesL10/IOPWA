@@ -88,10 +88,8 @@
                             <p id="selected-krisengebiet"></p><br>
                         </td>
                     </tr>
-                </tbody>
-                <br>
-            </table>
-            <table class="table">
+                    <br>
+
                 <tbody>
                     <tr>
                         <th>Art des Kleidungsstücks</th>
@@ -122,54 +120,42 @@
                     </tr>
                 </tbody>
             </table>
-            <a href="ZZZ_KleiderspendeAbholungDanke.html" class="btn btn-primary">Spende absenden</a>
+            <a href="ZZZ_KleiderspendeAbholungDanke.html" class="btn btn-primary">Spende abschicken</a>
             <a href="ZZZ_KleiderspendeAbholung.html" class="btn btn-primary">Spende bearbeiten</a>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script>
         window.onload = function zusammenfassung() {
-            var params = new URLSearchParams(window.location.search);
-            var vorname = params.get('vorname');
-            var nachname = params.get('nachname');
-            var adresse = params.get('adresse');
-            var postleitzahl = params.get('postleitzahl');
-            var stadt = params.get('stadt');
-            var selectedKrisengebiet = params.get('krisengebiet');
-            var oberteile = params.get('oberteile');
-            var unterteile = params.get('unterteile');
-            var schuhe = params.get('schuhe');
-            var sonstigeKleidungsstuecke = params.get('sonstigeKleidungsstuecke');
-            var date = params.get('date');
-            var erreichbarkeit = params.get('erreichbarkeit');
-            var sum = parseInt(oberteile) + parseInt(unterteile) + parseInt(schuhe) + parseInt(sonstigeKleidungsstuecke);
-            var aktuellesDatum = new Date();
-            var eingabeDatum = new Date(date);
-            document.getElementById("vorname").innerHTML = vorname;
-            document.getElementById("nachname").innerHTML = nachname;
-            document.getElementById("adresse").innerHTML = adresse;
-            document.getElementById("postleitzahl").innerHTML = postleitzahl;
-            document.getElementById("stadt").innerHTML = stadt;
-            document.getElementById("selected-krisengebiet").innerHTML = selectedKrisengebiet;
-            document.getElementById("erreichbarkeit").innerHTML = erreichbarkeit;
-            document.getElementById("oberteile").innerHTML = oberteile;
-            document.getElementById("unterteile").innerHTML = unterteile;
-            document.getElementById("schuhe").innerHTML = schuhe;
-            document.getElementById("sonstigeKleidungsstuecke").innerHTML = sonstigeKleidungsstuecke;
-            document.getElementById("date").innerHTML = eingabeDatum.getDate() + "." + (eingabeDatum.getMonth() + 1) + "." + eingabeDatum.getFullYear();
-            if (sum <= 0) {
-                alert("Aktuell spendest du 0 Artikel. Leider können wir deine Spende mit 0 Artikeln nicht entgegennehmen.Aktuell könen wir deine Spende leider nicht berücksichtigen.  Du kehrst nun auf die Formulareingabe zurück");
-                window.location.href = "http://127.0.0.1:52247/YourChoice!/ZZZ_KleiderspendeAbholung.html";
-            }
-            if (aktuellesDatum > eingabeDatum) {
-                alert("Bitte beachte, dass wir Spenden frühestens am nächsten Tag abholen können. Das von dir eingegebene Abholdatum liegt in der Vergangenheit ")
-                window.location.href = "http://127.0.0.1:52247/YourChoice!/ZZZ_KleiderspendeAbholung.html";
-            }
-            if (sum > 80) {
-                alert("Bitte beachte, dass wir diese größe an Spenden leider nicht abholen können. Deshalb bitten wir dich, die Spende an unserer Geschäftsstelle abzugeben! ")
-                window.location.href = "http://127.0.0.1:52247/YourChoice!/ZZZ_KleiderspendeAbgabe.html";
-            }
-        }
+                var params = new URLSearchParams(window.location.search);
+                var vorname = params.get('vorname');
+                var nachname = params.get('nachname');
+                var adresse = params.get('adresse');
+                var postleitzahl = params.get('postleitzahl');
+                var stadt = params.get('stadt');
+                var selectedKrisengebiet = params.get('krisengebiet');
+                var oberteile = params.get('oberteile');
+                var unterteile = params.get('unterteile');
+                var schuhe = params.get('schuhe');
+                var sonstigeKleidungsstuecke = params.get('sonstigeKleidungsstuecke');
+                var date = params.get('date');
+                var erreichbarkeit = params.get('erreichbarkeit');
+                var sum = parseInt(oberteile) + parseInt(unterteile) + parseInt(schuhe) + parseInt(sonstigeKleidungsstuecke);
+                var aktuellesDatum = new Date();
+                var eingabeDatum = new Date(date);
+                document.getElementById("vorname").innerHTML = vorname;
+                document.getElementById("nachname").innerHTML = nachname;
+                document.getElementById("adresse").innerHTML = adresse;
+                document.getElementById("postleitzahl").innerHTML = postleitzahl;
+                document.getElementById("stadt").innerHTML = stadt;
+                document.getElementById("selected-krisengebiet").innerHTML = selectedKrisengebiet;
+                document.getElementById("erreichbarkeit").innerHTML = erreichbarkeit;
+                document.getElementById("oberteile").innerHTML = oberteile;
+                document.getElementById("unterteile").innerHTML = unterteile;
+                document.getElementById("schuhe").innerHTML = schuhe;
+                document.getElementById("sonstigeKleidungsstuecke").innerHTML = sonstigeKleidungsstuecke;
+                document.getElementById("date").innerHTML = eingabeDatum.getDate() + "." + (eingabeDatum.getMonth() + 1) + "." + eingabeDatum.getFullYear();
+
     </script>
     <footer>
         <div class="footer"><strong>Vielen Dank für deinen Besuch auf unserer Website</strong> <br>
