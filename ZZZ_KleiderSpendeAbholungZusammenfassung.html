@@ -159,15 +159,15 @@
             var eingabeDatum = new Date(date);
             if (sum <= 0) {
                 alert("Aktuell spendest du 0 Artikel. Leider können wir deine Spende mit 0 Artikeln nicht entgegennehmen.Aktuell könen wir deine Spende leider nicht berücksichtigen.  Du kehrst nun auf die Formulareingabe zurück");
-                window.location.href = "http://127.0.0.1:52247/YourChoice!/ZZZ_KleiderspendeAbholung.html";
+                window.location.href = "ZZZ_KleiderspendeAbholung.html";
             }
             if (aktuellesDatum > eingabeDatum) {
                 alert("Bitte beachte, dass wir Spenden frühestens am nächsten Tag abholen können. Das von dir eingegebene Abholdatum liegt in der Vergangenheit ")
-                window.location.href = "http://127.0.0.1:52247/YourChoice!/ZZZ_KleiderspendeAbholung.html";
+                window.location.href = "ZZZ_KleiderspendeAbholung.html";
             }
             if (sum > 80) {
                 alert("Bitte beachte, dass wir diese größe an Spenden leider nicht abholen können. Deshalb bitten wir dich, die Spende an unserer Geschäftsstelle abzugeben! ")
-                window.location.href = "http://127.0.0.1:52247/YourChoice!/ZZZ_KleiderspendeAbgabe.html";
+                window.location.href = "ZZZ_KleiderspendeAbgabe.html";
             }
         }
     </script>
