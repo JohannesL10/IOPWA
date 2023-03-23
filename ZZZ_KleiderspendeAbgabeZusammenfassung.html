@@ -97,12 +97,13 @@
                 var schuhe = parameter.get('schuhe');
                 var sonstigeKleidungsstuecke = parameter.get('sonstigeKleidungsstuecke');
 
-                var summe = parseInt(oberteile) + parseInt(unterteile) + parseInt(schuhe) + parseInt(sonstigeKleidungsstuecke);
+               
                 document.getElementById("selected-krisengebiet").innerHTML = selectedKrisengebiet;
                 document.getElementById("oberteile").innerHTML = oberteile;
                 document.getElementById("unterteile").innerHTML = unterteile;
                 document.getElementById("schuhe").innerHTML = schuhe;
                 document.getElementById("sonstigeKleidungsstuecke").innerHTML = sonstigeKleidungsstuecke;
+                 var summe = parseInt(oberteile) + parseInt(unterteile) + parseInt(schuhe) + parseInt(sonstigeKleidungsstuecke);
                 if (summe <= 0) {
                     alert("Aktuell spendest du 0 Artikel. Leider können wir deine Spende mit 0 Artikeln nicht entgegennehmen.Aktuell könen wir deine Spende leider nicht berücksichtigen.  Du kehrst nun auf die Formulareingabe zurück");
                     window.location.href = "ZZZ_KleiderspendeAbgabe.html";
