@@ -142,9 +142,6 @@
             var sonstigeKleidungsstuecke = params.get('sonstigeKleidungsstuecke');
             var date = params.get('date');
             var erreichbarkeit = params.get('erreichbarkeit');
-            var sum = parseInt(oberteile) + parseInt(unterteile) + parseInt(schuhe) + parseInt(sonstigeKleidungsstuecke);
-            var aktuellesDatum = new Date();
-            var eingabeDatum = new Date(date);
             document.getElementById("vorname").innerHTML = vorname;
             document.getElementById("nachname").innerHTML = nachname;
             document.getElementById("adresse").innerHTML = adresse;
@@ -157,6 +154,9 @@
             document.getElementById("schuhe").innerHTML = schuhe;
             document.getElementById("sonstigeKleidungsstuecke").innerHTML = sonstigeKleidungsstuecke;
             document.getElementById("date").innerHTML = eingabeDatum.getDate() + "." + (eingabeDatum.getMonth() + 1) + "." + eingabeDatum.getFullYear();
+            var sum = parseInt(oberteile) + parseInt(unterteile) + parseInt(schuhe) + parseInt(sonstigeKleidungsstuecke);
+            var aktuellesDatum = new Date();
+            var eingabeDatum = new Date(date);
             if (sum <= 0) {
                 alert("Aktuell spendest du 0 Artikel. Leider können wir deine Spende mit 0 Artikeln nicht entgegennehmen.Aktuell könen wir deine Spende leider nicht berücksichtigen.  Du kehrst nun auf die Formulareingabe zurück");
                 window.location.href = "http://127.0.0.1:52247/YourChoice!/ZZZ_KleiderspendeAbholung.html";
