@@ -33,7 +33,7 @@
                             <a class="nav-link" href="ZZZ_SpendeEinstieg.html">Ich möchte spenden!</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Rechtliche Hinweise</a>
+                            <a class="nav-link active" aria-current="page" href="ZZZ_RechtlicheHinweise.html">Rechtliche Hinweise</a>
                         </li>
                     </ul>
                 </div>
@@ -42,144 +42,111 @@
     </head>
     <div class="container-sm">
         <div class="container1">
-            <p> Danke für deine Spendenbereitschaft! Überprüfe doch bitte im Anschluss die Zusammenfassung deiner Daten. Wenn alles passt, dann kannst du mit einem Klick auf den Button "Spende abschicken" die Abholung deiner Spende beauftragen.</p>
+            <div class="card">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img src="1Abholung_httpsunsplash.comdefotosA4Ax1ApccfA.jpg" class="img-fluid">
+                        <p class="quelle">Quelle: https://unsplash.com/photos/A4Ax1ApccfA</p>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="card-body">
+                            <p><b>Und so funktioniert die Abholung an deiner Adresse!</b></p>
+                            <p>Fülle das Formular bitte vollständig aus. <br><br>
+                                Bitte erfasse hierzu einige persönliche Daten, damit wir deine Spende abholen können. Du kannst zudem ein Datum und eine Uhrzeit eingeben, damit wir dich antreffen. Anschließend gibst du eine Region an, welche mithilfe deiner Spende unterstützt werden soll. Erfasse bitte zusätzlich noch die Anzahl der Kleidungsstücke, die du spendest.<br><br>
+                                Auf der nachfolgenden Seite siehst du eine Zusammenfassung deiner Angaben, hier kannst du nochmal alles kontrollieren. </p>
+                            <strong> Bitte beachte, dass wir maximal 80 Spendenteile mit einer Fahrt transportieren können. Wenn du mehr spenden möchtest, aber keine Zeit hast, uns die Artikel zu überbringen, kannst du gerne mehrere Abholungen beauftragen.</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="container2">
-            <strong>Datum der Abholung</strong>
-            <p id="date"></p>
-            <strong>Uhrzeit der Abholung zwischen folgendem Zeitfenster</strong>
-            <div class="row">
-                <p id="erreichbarkeit"></p><br>
-            </div>
-            <table class="table">
-                <tbody>
-                    <tr>
-                        <th scope="row">Vorname</th>
-                        <td>
-                            <p id="vorname"></p><br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Name</th>
-                        <td>
-                            <p id="nachname"></p><br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Adresse</th>
-                        <td>
-                            <p id="adresse"></p><br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Postleitzahl</th>
-                        <td>
-                            <p id="postleitzahl"></p><br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Stadt</th>
-                        <td>
-                            <p id="stadt"></p><br>
-                        </td>
-                    <tr>
-                        <th scope="row">Ausgewähltes Krisengebiet</th>
-                        <td>
-                            <p id="selected-krisengebiet"></p><br>
-                        </td>
-                    </tr>
-                </tbody>
-                <br>
-            </table>
-            <table class="table">
-                <tbody>
-                    <tr>
-                        <th>Art des Kleidungsstücks</th>
-                        <td><strong>Anzahl</strong> </td>
-                    <tr>
-                        <th>Oberteilen</th>
-                        <td>
-                            <p id="oberteile"></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Unterteile</th>
-                        <td>
-                            <p id="unterteile"></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Schuhpaare</th>
-                        <td>
-                            <p id="schuhe"></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Sonstige Kleidungstücke</th>
-                        <td>
-                            <p id="sonstigeKleidungsstuecke"></p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <a href="ZZZ_KleiderspendeAbholungDanke.html" class="btn btn-primary">Spende absenden</a>
-            <a href="ZZZ_KleiderspendeAbholung.html" class="btn btn-primary">Spende bearbeiten</a>
+            <form action="ZZZ_KleiderspendeAbholungZusammenfassung.html" method="get" class="row g-3">
+                <div class="col-md-6">
+                    <label for="vorname"> Vorname </label>
+                    <input title="Bitte erfasse deinen Vornamen!" type="text" id="vorname" name="vorname" class="form-control" placeholder="Max" maxlength="50" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="nachname"> Nachname </label>
+                    <input title="Bitte erfasse deinen Nachnamen!" type="text" id="nachname" name="nachname" class="form-control" placeholder="Mustermann" maxlength="50" required>
+                </div>
+                <div class="col-md-12">
+                    <label for="adresse"> Straße und Hausnummer </label>
+                    <input title="Bitte erfasse deine Adresse!" type="text" id="adresse" name="adresse" class="form-control" placeholder="Musterstraße 1" maxlength="50" required>
+                </div>
+                <div class="col-md-3">
+                    <label for="postleitzahl"> Postleitzahl </label>
+                    <input title="Bitte erfasse deine regionale Postleitzahl! Diese muss aus der Region Oberbayern stammen!" type="text" id="postleitzahl" pattern="85\d{3}" name="postleitzahl" class="form-control" placeholder="85049" maxlength="5" minlength="5" required>
+                </div>
+                <div class="col-md-9">
+                    <label for="stadt"> Stadt </label>
+                    <input title="Bitte erfasse deine Stadt!" type="text" id="stadt" name="stadt" class="form-control" placeholder="Ingolstadt" maxlength="50" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="datum"> Wann dürfen wir deine Spende abholen? </label>
+                    <input title="Bitte erfasse ein Abholdatum" type="date" id="date" name="date" class="form-control" required>
+                </div>
+                <div class="col-md-8">
+                    <label for="erreichbarkeit">Wann erreichen wir dich?</label>
+                    <select required id="erreichbarkeit" name="erreichbarkeit" class="form-control">
+                        <option value="Vormittags zwischen 08:00 Uhr und 12:00 Uhr">Vormittags zwischen 08:00 Uhr und 12:00 Uhr</option>
+                        <option value="Nachmittags zwischen 13:00 Uhr und 16:00 Uhr">Nachmittags zwischen 13:00 Uhr und 16:00 Uhr</option>
+                        <option value="Abends zwischen 16:00 Uhr und 20:00 Uhr">Abends zwischen 16:00 Uhr und 20:00 Uhr</option>
+                    </select>
+                </div>
+                <div class="col-md-12">
+                    <label for="krisengebiet">Meine Spende soll folgender Region helfen</label>
+                    <select required id="krisengebiet" name="krisengebiet" class="form-control">
+                        <option value="Ukraine">Ukraine</option>
+                        <option value="Syrien">Syrien</option>
+                        <option value="Afghanistan">Afghanistan</option>
+                        <option value="Südsudan">Südsudan</option>
+                        <option value="Sudan">Sudan</option>
+                        <option value="Irak">Irak</option>
+                        <option value="Somalia">Somalia</option>
+                        <option value="Sudan">Sudan</option>
+                        <option value="Zentralafrikanische Republik">Zentralafrikanische Republik</option>
+                        <option value="Demokr. Republik Kongo">Demokr. Republik Kongo</option>
+                        <option value="Pakistan">Pakistan</option>
+                        <option value="Nordkorea">Nordkorea</option>
+                    </select>
+                </div>
+                <div class="col-md-12">
+                    <table class="table">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Anzahl</th>
+                                    <th scope="col">Kleidungsstück</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row"> <input title="Bitte die Anzahl der gespendeten Oberteile" type="number" id="oberteile" name="oberteile" class="form-control" placeholder="0-80" max="80" min="0" required></th>
+                                    <td>Oberteile wie T-Shirts, Pullover, Tank-Tops, Unterhemden, Jacken, Mäntel etc.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"> <input title="Bitte die Anzahl der gespendeten Unterteile" type="number" id="unterteile" name="unterteile" class="form-control" placeholder="0-80" min="0" max="80" required></th>
+                                    <td>Unterteile wie Hosen, Jeans, kurze Hosen etc.</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row"><input title="Bitte die Anzahl der gespendeten Unterteile" type="number" id="schuhe" name="schuhe" class="form-control" placeholder="0-80" min="0" max="80" required> </th>
+                                    <td>Sämtliche Schuhpaare, die du Spenden möchtest</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><input title="Bitte die Anzahl der gespendeten Unterteile" type="number" id="sonstigeKleidungsstuecke" name="sonstigeKleidungsstuecke" class="form-control" placeholder="0-80" min="0" max="80" required></th>
+                                    <td>Sonstige Kleidungsstücke</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </table>
+                </div>
+                <input type="submit" value="Eingaben bestätigen und Zusammenfassung der Daten anzeigen" class="btn btn-primary">
+            </form>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <script>
-        window.onload = function zusammenfassung() {
-            var parameter = new URLSearchParams(window.location.search);
-            var vorname = parameter.get('vorname');
-            var nachname = parameter.get('nachname');
-            var adresse = parameter.get('adresse');
-            var postleitzahl = parameter.get('postleitzahl');
-            var stadt = parameter.get('stadt');
-            var selectedKrisengebiet = parameter.get('krisengebiet');
-            var oberteile = parameter.get('oberteile');
-            var unterteile = parameter.get('unterteile');
-            var schuhe = parameter.get('schuhe');
-            var sonstigeKleidungsstuecke = parameter.get('sonstigeKleidungsstuecke');
-            var date = parameter.get('date');
-            var erreichbarkeit = parameter.get('erreichbarkeit');
-            var sum = parseInt(oberteile) + parseInt(unterteile) + parseInt(schuhe) + parseInt(sonstigeKleidungsstuecke);
-            var aktuellesDatum = new Date();
-            var eingabeDatum = new Date(date);
-            var aktuelleZeit = new Date();
-            var datumZukunft = new Date();
-            datumZukunft.setFullYear(datumZukunft.getFullYear() + 1);
-            document.getElementById("nachname").innerHTML = nachname;
-            document.getElementById("adresse").innerHTML = adresse;
-            document.getElementById("postleitzahl").innerHTML = postleitzahl;
-            document.getElementById("stadt").innerHTML = stadt;
-            document.getElementById("selected-krisengebiet").innerHTML = selectedKrisengebiet;
-            document.getElementById("erreichbarkeit").innerHTML = erreichbarkeit;
-            document.getElementById("oberteile").innerHTML = oberteile;
-            document.getElementById("unterteile").innerHTML = unterteile;
-            document.getElementById("schuhe").innerHTML = schuhe;
-            document.getElementById("sonstigeKleidungsstuecke").innerHTML = sonstigeKleidungsstuecke;
-
-            document.getElementById("date").innerHTML = eingabeDatum.getDate() + "." + (eingabeDatum.getMonth() + 1) + "." + eingabeDatum.getFullYear();
-
-            if (sum <= 0) {
-                alert("Du Spendest aktuell 0 Artikel. Bitte gebe die Anzahl deiner Spendenartikel an!");
-                window.location.href = "http://127.0.0.1:52247/YourChoice!/ZZZ_KleiderspendeAbholung.html";
-            }
-            if (aktuellesDatum > eingabeDatum) {
-                alert("Das eingegebene Datum liegt in der Vergangenheit. Bitte erfasse ein Datum des aktuellen Jahres!");
-                window.location.href = "http://127.0.0.1:52247/YourChoice!/ZZZ_KleiderspendeAbholung.html";
-            }
-
-            if (sum > 80) {
-                alert("Die Summe der Spendenartikel liegt über 80 Artikel. Bitte wähle die Abholung an der Geschäftsstelle aus!")
-                window.location.href = "http://127.0.0.1:52247/YourChoice!/ZZZ_KleiderspendeAbgabe.html";
-            }
-            if (eingabeDatum > datumZukunft) {
-                alert("Das eingegebene Datum liegt mehr als 1 Jahr in der Zukunft. Bitte erfasse ein früheres Datum!")
-                window.location.href = "http://127.0.0.1:52247/YourChoice!/ZZZ_KleiderspendeAbgabe.html";
-            }
-        }
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
     </script>
     <footer>
         <div class="footer"><strong>Vielen Dank für deinen Besuch auf unserer Website</strong> <br>
@@ -188,5 +155,3 @@
         </div>
     </footer>
 </body>
-
-</html>
