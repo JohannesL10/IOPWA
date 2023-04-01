@@ -147,8 +147,8 @@
             var eingabeDatum = new Date(date);
             var aktuelleZeit = new Date();
             var datumZukunft = new Date();
+
             datumZukunft.setFullYear(datumZukunft.getFullYear() + 1);
-                document.getElementById("vorname").innerHTML = vorname;
             document.getElementById("nachname").innerHTML = nachname;
             document.getElementById("adresse").innerHTML = adresse;
             document.getElementById("postleitzahl").innerHTML = postleitzahl;
@@ -179,15 +179,19 @@
                 alert("Das eingegebene Datum liegt mehr als 1 Jahr in der Zukunft. Bitte erfasse ein früheres Datum!")
                 window.location.href = "http://127.0.0.1:52247/YourChoice!/ZZZ_KleiderspendeAbgabe.html";
             }
+            if (postleitzahl.substr(0, 2) !== "85") {
+                alert("Die eingegebene Postleitzahl ist keine aus Oberbayern. Bitte prüfe die Postleitzahl oder wähle die Abgabe vor Ort aus.")
+                window.location.href = "http://127.0.0.1:52247/YourChoice!/ZZZ_KleiderspendeAbgabe.html";
+            }
         }
-
     </script>
-    <footer>
-        <div class="footer"><strong>Vielen Dank für deinen Besuch auf unserer Website</strong> <br>
-            <a href="ZZZ_RechtlicheHinweise.html">Rechtliche Hinweise</a>
-            <br>
-        </div>
-    </footer>
 </body>
+<footer>
+    <div class="footer"><strong>Vielen Dank für deinen Besuch auf unserer Website</strong> <br>
+        <a href="ZZZ_RechtlicheHinweise.html">Rechtliche Hinweise</a>
+        <br>
+    </div>
+</footer>
+
 
 </html>
