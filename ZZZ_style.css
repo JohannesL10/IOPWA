@@ -1,43 +1,39 @@
 .navbar {
-	position: fixed;
-	width: 100%,
-		padding: 10px;
-	margin: auto;
-	text-align: center;
+    position: fixed;
+    width: 100%,
+        padding: 10px;
+    margin: auto;
 }
 
 .footer {
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	padding: 15px;
-	background-color: darkgrey;
-	color: white;
-	text-align: center;
-	color: white;
-	font-size: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    background-color: darkgrey;
+    color: white;
+    text-align: center;
 }
+
 .container1 {
-	margin-top: 170px;
-	margin-bottom: 80px;
+    margin-top: 170px;
+    margin-bottom: 80px;
 
 }
+
 .container2 {
 
-	margin-bottom: 200px;
+    margin-bottom: 200px;
 }
+
 .footer a {
-	color: white;
-	font-size: 10px;
-	text-align: center;
+    color: white;
+    font-size: 10px;
+    text-align: center;
 }
 
-.img-fluid{
-    padding: 10px;
-}
-
-.quelle{
+.quelle {
     padding: 8px;
     font-size: 9px;
 }
